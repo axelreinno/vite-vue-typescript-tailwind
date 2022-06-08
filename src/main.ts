@@ -1,6 +1,10 @@
-import { createApp } from "vue";
-import App from "./App.vue";
+import { createApp } from 'vue';
+import App from './App.vue';
 
-import "@styles/tailwind.scss";
+import '@styles/tailwind.scss';
 
-createApp(App).mount("#app");
+const app = createApp(App);
+Object.values(import.meta.globEager('./modules/*.ts')).forEach(i => i.install?.(app));
+app.mount('#app');
+
+export default app;
