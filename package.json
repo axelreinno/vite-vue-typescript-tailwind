@@ -10,7 +10,8 @@
 		"lint:script": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix",
 		"lint:style": "stylelint src/**/*.{css,scss} --fix",
 		"prettier": "prettier . --write",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"prepare": "husky install"
 	},
 	"dependencies": {
 		"@vueuse/core": "^8.6.0",
