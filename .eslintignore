@@ -9,6 +9,7 @@ dist/
 build/
 public/
 coverage/
+locales/
 .gitignore
 .npmignore
 .prettierignore

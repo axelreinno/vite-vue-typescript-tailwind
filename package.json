@@ -7,9 +7,9 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vue-tsc --noEmit && vite build",
-		"lint:script": "eslint . --ext .js,.jsx,.ts,.tsx,.vue --fix",
-		"lint:style": "stylelint src/**/*.{css,scss,vue} --fix",
-		"prettier": "prettier --config .prettierrc . --write",
+		"lint:script": "eslint --ext .js,.jsx,.ts,.tsx,.vue --fix",
+		"lint:style": "stylelint src/**/*.{css,scss} --fix",
+		"prettier": "prettier . --write",
 		"preview": "vite preview"
 	},
 	"dependencies": {
@@ -35,12 +35,16 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-vue": "^9.1.0",
 		"eslint-plugin-vuejs-accessibility": "^1.2.0",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.1",
 		"postcss": "^8.4.14",
 		"postcss-html": "^1.4.1",
 		"prettier": "^2.6.2",
 		"prettier-plugin-tailwindcss": "^0.1.11",
 		"sass": "^1.52.2",
 		"stylelint": "^14.8.5",
+		"stylelint-config-prettier-scss": "^0.0.1",
+		"stylelint-config-recommended-scss": "^6.0.0",
 		"stylelint-config-recommended-vue": "^1.4.0",
 		"stylelint-config-standard-scss": "^4.0.0",
 		"stylelint-scss": "^4.2.0",
@@ -54,5 +58,9 @@
 		"vite-plugin-stylelint": "^2.2.3",
 		"vite-plugin-vue-layouts": "^0.6.0",
 		"vue-tsc": "^0.36.0"
+	},
+	"lint-staged": {
+		"*.{vue,js,ts,jsx,tsx}": "eslint --cache --fix",
+		"*.{css,scss}": "stylelint --fix"
 	}
 }

@@ -17,7 +17,7 @@ README.md
 package.lock
 yarn.lock
 yarn-error.log
-pnpm.lock
+pnpm-lock.yaml
 .vscode
 .gitignore
 .npmignore
@@ -27,7 +27,5 @@ pnpm.lock
 .editorconfig
 .eslintignore
 .history
-.bablerc
-.eslintrc.json
 **/*.yml
 **/.gitkeep
