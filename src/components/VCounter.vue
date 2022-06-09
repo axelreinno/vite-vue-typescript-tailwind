@@ -9,7 +9,7 @@ const {
 	min: 0,
 });
 
-const data: any = "";
+const data: any = '';
 console.log(data);
 </script>
 
