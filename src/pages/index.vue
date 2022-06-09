@@ -1,9 +1,15 @@
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+</script>
+
 <template>
 	<div class="bg-indigo-700">
 		<div class="flex h-[100vh] flex-col items-center justify-center">
 			<div class="text-center">
 				<h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-					<span class="block">HOME PAGE.</span>
+					<span class="block">{{ t('common.home') }}</span>
 				</h2>
 
 				<router-link class="text-white underline" to="/about"> Go To About page </router-link>

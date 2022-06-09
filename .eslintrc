@@ -8,7 +8,13 @@
 		"sourceType": "module"
 	},
 	"plugins": ["@typescript-eslint", "vuejs-accessibility"],
-	"extends": ["eslint:recommended", "plugin:vue/vue3-recommended", "plugin:vuejs-accessibility/recommended", "@vue/eslint-config-typescript/recommended", "prettier"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:vue/vue3-recommended",
+		"plugin:vuejs-accessibility/recommended",
+		"@vue/eslint-config-typescript/recommended",
+		"prettier"
+	],
 	"globals": {
 		"defineProps": "readonly",
 		"defineEmits": "readonly",

@@ -1,5 +1,9 @@
 {
-	"extends": ["stylelint-config-standard-scss", "stylelint-config-recommended-vue/scss"],
+	"extends": [
+		"stylelint-config-standard-scss",
+		"stylelint-config-recommended-vue/scss",
+		"stylelint-config-prettier-scss"
+	],
 	"plugins": ["stylelint-scss"],
 	"rules": {
 		"scss/at-rule-no-unknown": [
@@ -8,12 +12,6 @@
 				"ignoreAtRules": ["tailwind", "apply", "variants", "responsive", "screen", "layer"]
 			}
 		],
-		"scss/at-import-partial-extension": null,
-		"indentation": "tab",
-		"string-quotes": "single",
-		"property-no-vendor-prefix": null,
-		"no-duplicate-selectors": null,
-		"no-empty-source": null,
-		"no-invalid-position-at-import-rule": null
+		"property-no-vendor-prefix": null
 	}
 }
