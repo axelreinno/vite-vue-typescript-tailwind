@@ -26,6 +26,7 @@ pnpm-lock.yaml
 .DS_Store
 .editorconfig
 .eslintignore
+.eslintcache
 .history
 **/*.yml
 **/.gitkeep

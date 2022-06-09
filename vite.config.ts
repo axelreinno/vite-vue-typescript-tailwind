@@ -17,7 +17,9 @@ export default defineConfig({
 		vue(),
 
 		// Reference: https://github.com/gxmari007/vite-plugin-eslint
-		eslint(),
+		eslint({
+			cache: false,
+		}),
 
 		// Reference: https://github.com/ModyQyW/vite-plugin-stylelint
 		stylelint(),
