@@ -2,10 +2,6 @@ SHELL := /bin/bash
 
 DIST ?= dist
 
-.PHONY: prepare
-prepare:
-	npx husky install
-
 .PHONY: lint
 lint:
 	npx eslint --ext .js,.jsx,.ts,.tsx,.vue --fix
